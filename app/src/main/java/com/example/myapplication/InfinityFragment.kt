@@ -28,8 +28,20 @@ class InfinityFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        return inflater.inflate(R.layout.fragment_infinity, container, false)
+        val view = inflater.inflate(R.layout.fragment_infinity, container, false)
+        
+        // Configurar el botón de inicio de sesión
+        val btnInicioSesion = view.findViewById<android.widget.Button>(R.id.button2)
+        btnInicioSesion.setOnClickListener {
+            // Navegar al fragmento de catálogo
+            val catalogoFragment = CatalogoFragment()
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainer, catalogoFragment)
+                .addToBackStack(null)
+                .commit()
+        }
+        
+        return view
     }
 
     companion object {
