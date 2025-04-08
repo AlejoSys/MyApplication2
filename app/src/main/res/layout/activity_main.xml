@@ -11,30 +11,17 @@
         android:id="@+id/fragmentContainer"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <include
         android:id="@+id/bottomNavigationView"
+        layout="@layout/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="115dp"
         android:layout_marginBottom="-57dp"
-        android:background="@drawable/bottom_nav_background"
-        android:paddingTop="7dp"
-        android:paddingBottom="40dp"
-        android:visibility="gone"
-        app:itemIconSize="24dp"
-        app:itemIconTint="#000000"
-        app:itemPaddingTop="0dp"
-        app:itemPaddingBottom="0dp"
-        app:labelVisibilityMode="unlabeled"
-        app:itemBackground="@null"
-        app:itemRippleColor="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
