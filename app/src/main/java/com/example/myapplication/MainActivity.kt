@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                     selectedFragment = InfinityFragment()
                 }
                 R.id.navigation_cart -> {
-                    selectedFragment = InfinityFragment()
+                    selectedFragment = OfertasFragment()
                 }
                 R.id.navigation_favorites -> {
                     selectedFragment = InfinnityFragment_02()
@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.fragmentContainer, InfinityFragment())
                 .commit()
         }
+
 
         // Seleccionar el item Inicio por defecto
         bottomNavigationView.selectedItemId = R.id.navigation_home
