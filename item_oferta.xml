@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:gravity="center_vertical"
+    android:layout_marginHorizontal="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tituloOferta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oferta especial"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtituloOferta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Válido hasta el 15 de abril de 2025"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Imagen a la derecha -->
+    <ImageView
+        android:id="@+id/imagenOferta"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/mouse1"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="12dp"
+        android:contentDescription="Imagen de oferta" />
+
+</LinearLayout>
