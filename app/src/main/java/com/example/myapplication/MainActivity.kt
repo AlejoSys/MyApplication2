@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
             if (selectedFragment != null) {
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.fragmentContainer, selectedFragment)
-                    .addToBackStack(null) // <-- Agregado aquí
+                    .addToBackStack(null) 
                     .commit()
             }
 
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragmentContainer, InfinityFragment())
-                .addToBackStack(null) // <-- Agregado aquí también
+                .addToBackStack(null) 
                 .commit()
         }
 
