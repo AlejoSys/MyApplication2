@@ -13,3 +13,64 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Archivos de backup
+/backup/
+backup/
+
+# Archivos de build adicionales
+**/build/
+/app/build/
+.idea/
+*.apk
+*.ap_
+*.aab
+
+# Archivos generados
+bin/
+gen/
+out/
+
+# Archivos de Gradle
+.gradle/
+build/
+
+# Archivos locales
+local.properties
+*.log
+
+# Android Studio Navigation editor
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# IntelliJ
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/jarRepositories.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild/
+.cxx/
+
+# Version control
+vcs.xml
+
+# Archivos temporales del sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
