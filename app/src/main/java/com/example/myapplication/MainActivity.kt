@@ -55,7 +55,6 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         }
 
-
         // Seleccionar el item Inicio por defecto
         bottomNavigationView.selectedItemId = R.id.navigation_home
     }
