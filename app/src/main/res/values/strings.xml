@@ -6,4 +6,6 @@
     <string name="product_price_format">$ %1$d COP</string>
     <string name="product_name_placeholder">Nombre del producto</string>
     <string name="product_price_placeholder">$00.00 COP</string>
+    <string name="navigation_drawer_open">Abrir menú de navegación</string>
+    <string name="navigation_drawer_close">Cerrar menú de navegación</string>
 </resources>
